@@ -1,0 +1,212 @@
+.splitter_wrapper {
+  width: 920px;
+  height: 481px;
+  background: #ffffff;
+  box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+  border-radius: 25px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.splitter_left {
+  width: 413px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bill_cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.bill_title {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #5e7a7d;
+}
+.bill_input_cont {
+  width: 100%;
+  height: 48px;
+  background: #f3f9fa;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.dollar_sign {
+  color: #9ebbbd;
+  position: absolute;
+  left: 5%;
+}
+.bill_input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0 20px;
+  background-color: transparent;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+  text-align: right;
+  color: #00474b;
+  border-radius: 5px;
+}
+.bill_input {
+  /* direction: rtl;
+  unicode-bidi: bidi-override; */
+}
+
+.bill_input:focus {
+  border: 2px solid #26c2ae;
+}
+
+.tip_selection_cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.tip_selection_title {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #5e7a7d;
+}
+
+.tip_percentage_nums {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.persentage_num {
+  width: 117px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+  text-align: center;
+  color: #ffffff;
+  background: #00474b;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.active_persentage_num {
+  background: #26c2ae !important;
+}
+.persentage_num:hover {
+  background-color: #9fe8df;
+  color: #00474b;
+}
+.custom_persentage {
+  width: 117px;
+  height: 48px;
+  background: #f3f9fa;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  margin-top: 10px;
+  /* direction: rtl;
+  unicode-bidi: bidi-override; */
+  padding: 0 10px;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+  color: #00474b;
+}
+.custom_persentage:focus {
+  border: 2px solid #26c2ae;
+}
+.custom_persentage::placeholder {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  /* line-height: 36px; */
+  text-align: center;
+  color: #547878;
+}
+
+.num_of_people_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.num_of_people_title_cont {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.num_of_people_title {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #5e7a7d;
+}
+.num_of_people_error {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  text-align: right;
+  color: #e17457;
+  display: none;
+}
+.active_error {
+  display: block !important;
+}
+.num_of_people_input_cont {
+  width: 100%;
+  background: #f3f9fa;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 10px;
+}
+.num_of_people_input {
+  width: 100%;
+  height: 48px;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  /* direction: rtl;
+  unicode-bidi: bidi-override; */
+  padding: 0 20px;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+  text-align: right;
+  color: #00474b;
+}
+.num_of_people_input:focus {
+  border: 2px solid #26c2ae;
+  border-radius: 5px;
+}
