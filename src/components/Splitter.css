@@ -1,11 +1,12 @@
 .splitter_wrapper {
   width: 920px;
-  height: 481px;
+  min-height: 481px;
   background: #ffffff;
   box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
   border-radius: 25px;
   margin-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 40px;
 }
@@ -42,6 +43,7 @@
 .dollar_sign {
   color: #9ebbbd;
   position: absolute;
+  font-size: 20px;
   left: 5%;
 }
 .bill_input {
@@ -178,6 +180,9 @@
   color: #e17457;
   display: none;
 }
+.input_error {
+  border: 2px solid #e17052 !important;
+}
 .active_error {
   display: block !important;
 }
@@ -209,4 +214,49 @@
 .num_of_people_input:focus {
   border: 2px solid #26c2ae;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 936px) {
+  .App {
+    padding-top: 40px;
+  }
+
+  .splitter_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    height: auto;
+  }
+  .num_of_people_wrapper {
+    margin-top: 20px;
+  }
+  .splitter_right {
+    margin-top: 20px;
+  }
+  .tip_selection_cont {
+    margin-top: 10px;
+  }
+  .reset_btn {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .persentage_num {
+    width: 100px;
+  }
+  .custom_persentage {
+    width: 100px;
+  }
+  .splitter_right {
+    width: 100%;
+  }
+  .calculator {
+    width: 100%;
+  }
+  .total_amount_right_num,
+  .tip_amount_right_num {
+    font-size: 35px;
+  }
 }

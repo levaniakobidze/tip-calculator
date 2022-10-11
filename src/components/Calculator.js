@@ -8,6 +8,7 @@ function Calculator({
   setSelectedPersentage,
   setTipPersentage,
   setTip,
+  setPeople,
 }) {
   const resetHandler = () => {
     setTip(0);
@@ -15,6 +16,7 @@ function Calculator({
     setBill("");
     setTotal(0);
     setTipPersentage("");
+    setPeople("");
   };
   return (
     <div className='calculator'>
@@ -28,7 +30,7 @@ function Calculator({
         </div>
         <div className='total_amount_cont'>
           <div className='total_amount_left'>
-            <p className='total_amount_title'>Tip Amount</p>
+            <p className='total_amount_title'>Total </p>
             <p className='person'>/ person</p>
           </div>
           <div className='total_amount_right_num'>${total.toFixed(2)}</div>

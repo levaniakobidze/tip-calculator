@@ -13,7 +13,7 @@ function App() {
   const [eror, setEror] = useState(false);
 
   useEffect(() => {
-    if (bill && tipPersentage && people) {
+    if (bill && tipPersentage && people && !eror) {
       let tip = (bill * tipPersentage) / 100 / people;
       let total = bill / people + tip;
       console.log(tip);

@@ -2,13 +2,13 @@ import React from "react";
 import Calculator from "./Calculator";
 import "./Splitter.css";
 
+import person from "./../assets/person.svg";
 function Splitter({
   bill,
   setBill,
   setTip,
   selectedPersentage,
   setSelectedPersentage,
-  tipPersentage,
   setTipPersentage,
   people,
   setPeople,
@@ -28,7 +28,19 @@ function Splitter({
   };
 
   const updatePeople = (e) => {
-    if (e.target.value === "0") {
+    if (
+      e.target.value === "0" ||
+      e.target.value === "00" ||
+      e.target.value === "000" ||
+      e.target.value === "0000" ||
+      e.target.value === "00000" ||
+      e.target.value === "000000" ||
+      e.target.value === "0000000" ||
+      e.target.value === "00000000" ||
+      e.target.value === "000000000" ||
+      e.target.value === "0000000000" ||
+      e.target.value === "00000000000"
+    ) {
       setEror(true);
     } else {
       setEror(false);
@@ -116,12 +128,14 @@ function Splitter({
             </span>
           </div>
           <div className='num_of_people_input_cont'>
-            <span className='dollar_sign'></span>
+            <span className='dollar_sign'>
+              <img src={person} alt='person' />
+            </span>
             <input
               type='number'
               value={people}
               onChange={updatePeople}
-              className='num_of_people_input'
+              className={`num_of_people_input ${eror && "input_error"}`}
             />
           </div>
         </div>
@@ -135,6 +149,7 @@ function Splitter({
           setTipPersentage={setTipPersentage}
           setTip={setTip}
           setBill={setBill}
+          setPeople={setPeople}
         />
       </div>
     </div>
