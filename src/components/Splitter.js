@@ -128,7 +128,7 @@ function Splitter({
             </span>
           </div>
           <div className='num_of_people_input_cont'>
-            <span className='dollar_sign'>
+            <span className='person_icon'>
               <img src={person} alt='person' />
             </span>
             <input

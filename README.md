@@ -26,6 +26,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Levan Iakobidze](https://www.your-site.com)
-- Github - [Levan Iakobidze](https://www.twitter.com/yourusername)
+- Website - [Portfolio](https://levaniakobidze.vercel.app/)
+- Github - [Levan Iakobidze](https://github.com/levaniakobidze)
 - Linkedin - [Levan Iakobidze](https://www.linkedin.com/in/levan-iakobidze-b0b60923b/)

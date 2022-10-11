@@ -215,6 +215,11 @@
   border: 2px solid #26c2ae;
   border-radius: 5px;
 }
+.person_icon {
+  position: absolute;
+  left: 5%;
+  top: 30%;
+}
 
 @media screen and (max-width: 936px) {
   .App {
