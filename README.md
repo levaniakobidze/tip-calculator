@@ -12,8 +12,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/levaniakobidze/tip-calculator](https://github.com/levaniakobidze/tip-calculator)
+- Live Site URL: [https://tip-calculator-levan.vercel.app/](https://tip-calculator-levan.vercel.app/)
 
 ### Built with
 
@@ -23,3 +23,9 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Css-modules] - For styles
+
+## Author
+
+- Website - [Levan Iakobidze](https://www.your-site.com)
+- Github - [Levan Iakobidze](https://www.twitter.com/yourusername)
+- Linkedin - [Levan Iakobidze](https://www.linkedin.com/in/levan-iakobidze-b0b60923b/)
