@@ -19,6 +19,10 @@ function Splitter({
   setEror,
 }) {
   const updateBill = (e) => {
+    if (bill.startsWith("0")) {
+      setBill(1);
+      console.log("as");
+    }
     setBill(e.target.value);
   };
 
@@ -28,19 +32,7 @@ function Splitter({
   };
 
   const updatePeople = (e) => {
-    if (
-      e.target.value === "0" ||
-      e.target.value === "00" ||
-      e.target.value === "000" ||
-      e.target.value === "0000" ||
-      e.target.value === "00000" ||
-      e.target.value === "000000" ||
-      e.target.value === "0000000" ||
-      e.target.value === "00000000" ||
-      e.target.value === "000000000" ||
-      e.target.value === "0000000000" ||
-      e.target.value === "00000000000"
-    ) {
+    if (e.target.value === "0") {
       setEror(true);
     } else {
       setEror(false);
@@ -66,6 +58,10 @@ function Splitter({
               value={bill}
               onChange={updateBill}
               className='bill_input'
+              autofocus
+              required
+              pattern='[1-9]\d*'
+              min='0'
             />
           </div>
         </div>
@@ -136,6 +132,7 @@ function Splitter({
               value={people}
               onChange={updatePeople}
               className={`num_of_people_input ${eror && "input_error"}`}
+              min='0'
             />
           </div>
         </div>
